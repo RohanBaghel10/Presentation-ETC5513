@@ -1,0 +1,22 @@
+---
+title: "Xaringan Template"
+subtitle: "An example"
+author: "Patricia Menéndez"
+institute: "Department of Econometrics and Business Statistics"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: css/style.css
+    yolo: FALSE
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(readr)
+```
+
