@@ -80,3 +80,11 @@ class:left,top
 ```{r echo=FALSE, out.height='70%', out.width='80%', fig.align='center'}
 knitr::include_graphics("figs/Defence_M_Graph.png")
 ```
+---
+
+class:center, middle
+
+#Best Overall performance as a Midfielder in La Liga
+
+```{r echo=FALSE,  fig.align='center'}
+knitr::include_graphics("figs/Overall_player.png")
