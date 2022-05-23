@@ -30,6 +30,7 @@ library(tidyverse)
 library(readr)
 library(kableExtra)
 library(bookdown)
+library(kableExtra)
 ```
 
 ```{r read_data}
