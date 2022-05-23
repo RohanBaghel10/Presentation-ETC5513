@@ -366,3 +366,15 @@ class: center, middle
 - .green[Which goalkeeper has the best performance in La-Liga during the season 2019 - 2020?]
 
 ---
+class: left, middle
+# Terms
+## “Recoveries” 
+.content-box-soft[
+- Recovering the ball in a situation where neither team has possession or where the ball has been played directly to a player by an opponent.
+]
+
+## “Clearances” 
+.content-box-soft[
+- When a goalkeeper kicks the ball away from the goal they are defending
+]
+
