@@ -15,15 +15,41 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE}
 library(tidyverse)
 library(readr)
 ```
 
----
+
 class: center, middle
 # The Midfielder
 
 ```{r echo=FALSE, out.width = '100%', fig.align='center'}
 knitr::include_graphics("figs/Midfielder-image.jpg")
+```
+
+Image Source : Getty Images 
+
+---
+class:left, top 
+# Role 
+
+* Act as link between the **Strikers** and the **Defenders**. 
+
+* Control the flow of the game.
+
+* Effective communicator 
+
+```{r fig.align='center', echo=FALSE, out.width='35%', out.height== '35%'}
+knitr::include_graphics("figs/mid-pos.png")
+```
+
+---
+
+class:left, top
+
+#Best Offensive Midfielders in La Liga
+
+```{r echo=FALSE, out.height='80%', fig.align='center'}
+knitr::include_graphics("figs/Attack_M_Table.png")
 ```
