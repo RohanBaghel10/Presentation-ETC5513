@@ -364,6 +364,10 @@ knitr::include_graphics("figs/goal1.webp")
 class: center, middle
 
 # .bold[Aim:  Best Goalkeeper ]
+
+```{r out.width = '60%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/goal2.png")
+```
 - .green[Which goalkeeper has the best performance in La-Liga during the season 2019 - 2020?]
 
 ---
