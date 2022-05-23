@@ -15,13 +15,13 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, message=FALSE}
 library(tidyverse)
 library(readr)
 ```
 
 
----
+
 class: left, middle
 # Defender position 
 
@@ -80,6 +80,19 @@ knitr::include_graphics("figs/PvsL.png")
 ```
 
 
+---
+class: left, middle
+# Who has made more mistakes?
+
+* Now we will be judging the players on the number of mistakes made by them as they are giving each other a tough competition.
+
+```{r out.width = '70%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/worse.png")
+```
+
+* As we can clearly see Laguardia has made significantly more mistakes while on the pitch, **Pique** is defender who wins this competetion.
+
+* On top of of that pique has also scored 4 goals for .blue[FC] .red[BARCELONA]
 
 
 
