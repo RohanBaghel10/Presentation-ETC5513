@@ -11,11 +11,11 @@ output:
 ---
 
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, echo=FALSE}
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r}
+```{r echo=FALSE}
 library(tidyverse)
 library(readr)
 ```
@@ -54,6 +54,30 @@ knitr::include_graphics("figs/logo.png")
 ```
 
 
+---
+class: left, middle
+# Clearance Vs Recovery
+
+* We will be analyzing the data to get the best defender by going through some levels.
+* The first and major one being, plotting **Clearance Vs Recoveries** as the these are the two most important characteristics of a defender.
+
+
+```{r out.width = '70%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/CvsR.png")
+```
+
+
+---
+class: left, middle
+# Pique Vs Laguardia
+
+* **Pique and Laguardia** came out on top in the first level as they had the most impact as a defender.
+* Now we will try to choose the best defender by bringing in more variables into the picture. 
+
+
+```{r out.width = '70%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/PvsL.png")
+```
 
 
 
