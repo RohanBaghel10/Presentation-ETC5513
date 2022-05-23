@@ -50,7 +50,7 @@ class:left, top
 
 #Best Offensive Midfielders in La Liga
 
-```{r echo=FALSE, out.height='80%', fig.align='center'}
+```{r echo=FALSE, out.height='80%', out.width='80%', fig.align='center'}
 knitr::include_graphics("figs/Attack_M_Table.png")
 ```
 ---
@@ -68,7 +68,7 @@ class:left,top
 
 #Best Defensive Midfielders in La Liga
 
-```{r echo=FALSE, out.height='80%', fig.align='center'}
+```{r echo=FALSE, out.height='80%', out.width='80%', fig.align='center'}
 knitr::include_graphics("figs/Defence_M_Table.png")
 ```
 ---
