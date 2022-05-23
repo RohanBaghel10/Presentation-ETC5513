@@ -107,21 +107,16 @@ a, a > code {
   color: #E9EBEE;
 }
 .title-slide {
-  background-image: url(yana-gorbunova-xXvFbupJYJ8-unsplash.jpg);
+  background-image: url(football.jpg);
   background-size: cover;
 }
 .title-slide h1 {
   text-shadow: none;
-  color: 	#3b444b;
+  color: 	#FFFFFF;
   margin-left: +30pt;
   margin-top: +5pt;
 }
 .title-slide h2 {
-  text-shadow: none;
-  color: #F7F8FA;
-  margin-left: +30pt;
-}
-.title-slide h3 {
   text-shadow: none;
   color: #F7F8FA;
   margin-left: +30pt;
