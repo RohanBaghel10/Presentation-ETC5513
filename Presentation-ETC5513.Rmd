@@ -378,3 +378,77 @@ class: left, middle
 - When a goalkeeper kicks the ball away from the goal they are defending
 ]
 
+---
+class: center, middle
+
+### Goalkeeper
+
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+goal_data <- La_liga_data %>%
+  filter(Position == "Goalkeeper") %>%
+  select(Team, Position, Name, Games.played, Goals.conceded.while.player.on.pitch, Recoveries, Clearances) %>%
+  rename("Game_played" = Games.played,
+         "Goal_conceded" = Goals.conceded.while.player.on.pitch)
+mean_goal_data <- goal_data %>%
+  filter(Game_played > 0)
+```
+
+```{r graph-data, out.width = '65%', echo = FALSE, message = FALSE, warning = FALSE, fig.cap = "Recoveries and Clearances", fig.align='center'}
+p2 <- ggplot(mean_goal_data, 
+             aes(x = Name, 
+                 y = Recoveries, label = Name)) +
+  geom_point() +
+  geom_text(hjust = 0.5, vjust = -1) + 
+  theme(axis.text.x=element_blank(),
+        axis.ticks = element_blank())
+
+p3 <- ggplot(mean_goal_data, 
+             aes(x = Name, 
+                 y = Clearances, label = Name)) +
+  geom_point() +
+  geom_text(hjust = 0.5, vjust = -1) + 
+  theme(axis.text.x=element_blank(),
+        axis.ticks = element_blank())
+
+gridExtra::grid.arrange(p2, p3, ncol = 2)
+```
+
+---
+class: center, middle
+## Scatter Plot for Recoveries and Clearances
+```{r scatter-plot, out.width = '60%', echo = FALSE, message = FALSE, warning = FALSE, fig.align='center'}
+ggplot(goal_data, 
+       aes(x = Recoveries,
+           y = Clearances)) +
+  geom_point() +
+  theme_bw()
+```
+
+.content-box-soft[.blue[ 
+- The scatter plot demonstrates a positive relationship.
+]]
+
+---
+class: center, middle
+### Top 10 Goalkeepers
+```{r goal-data1, out.width = '50%', echo = FALSE, message = FALSE, warning = FALSE}
+goal_data2 <- goal_data %>%
+  select(Team, Name, Recoveries) %>%
+  arrange(desc(Recoveries)) %>%
+  mutate("Rank_recoveries" = 1:n())
+
+goal_data3 <- goal_data %>%
+  select(Name, Clearances) %>%
+  arrange(desc(Clearances)) %>%
+  mutate("Rank_clearances" = 1:n())
+
+goal_data4 <- goal_data2 %>%
+  left_join(goal_data3, by = "Name") %>%
+  mutate("Average" = (Rank_recoveries + Rank_clearances)/2) %>%
+  arrange(Average) %>%
+  head(10) %>%
+  select(Team, Name, Recoveries, Clearances) %>%
+  mutate("Rank" = 1:n())
+
+knitr::kable(goal_data4, "pipe", align = "llccr")
+```
