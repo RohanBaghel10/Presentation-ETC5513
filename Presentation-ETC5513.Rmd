@@ -21,7 +21,6 @@ library(readr)
 ```
 
 
-
 class: left, middle
 # Defender position 
 
@@ -93,6 +92,78 @@ knitr::include_graphics("figs/worse.png")
 * As we can clearly see Laguardia has made significantly more mistakes while on the pitch, **Pique** is defender who wins this competetion.
 
 * On top of of that pique has also scored 4 goals for .blue[FC] .red[BARCELONA]
+
+---
+
+class: center, middle
+# The Midfielder
+
+```{r echo=FALSE, out.width = '100%', fig.align='center'}
+knitr::include_graphics("figs/Midfielder-image.jpg")
+```
+
+Image Source : Getty Images 
+
+---
+class:left, top 
+# Role 
+
+* Act as link between the **Strikers** and the **Defenders**. 
+
+* Control the flow of the game.
+
+* Effective communicator 
+
+```{r fig.align='center', echo=FALSE, out.width='35%', out.height== '35%'}
+knitr::include_graphics("figs/mid-pos.png")
+```
+
+---
+
+class:left, top
+
+#Best Offensive Midfielders in La Liga
+
+```{r echo=FALSE, out.height='80%', out.width='80%', fig.align='center'}
+knitr::include_graphics("figs/Attack_M_Table.png")
+```
+---
+
+class:left,top
+
+#Best Offensive Midfielders in La Liga
+
+```{r echo=FALSE, out.height='70%', out.width='80%', fig.align='center'}
+knitr::include_graphics("figs/Attack_M_Graph.png")
+```
+---
+
+class:left,top
+
+#Best Defensive Midfielders in La Liga
+
+```{r echo=FALSE, out.height='80%', out.width='80%', fig.align='center'}
+knitr::include_graphics("figs/Defence_M_Table.png")
+```
+---
+
+class:left,top
+
+#Best Defensive Midfielders in La Liga
+
+```{r echo=FALSE, out.height='70%', out.width='80%', fig.align='center'}
+knitr::include_graphics("figs/Defence_M_Graph.png")
+```
+---
+
+class:center, middle
+
+#Best Overall performance as a Midfielder in La Liga
+
+```{r echo=FALSE,  fig.align='center'}
+knitr::include_graphics("figs/Overall_player.png")
+```
+
 
 
 
