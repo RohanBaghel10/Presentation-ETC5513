@@ -358,3 +358,11 @@ knitr::include_graphics("figs/goal1.webp")
 .grey[The goalkeeper, sometimes shortened to keeper or goalie, is one of the major positions of association football.]
 
 .tiny[<span>Photo from <a href="https://laligaexpert.com/2021/09/08/la-liga-goalkeepers/">Laligaexpert</a></span>]
+
+---
+class: center, middle
+
+# .bold[Aim:  Best Goalkeeper ]
+- .green[Which goalkeeper has the best performance in La-Liga during the season 2019 - 2020?]
+
+---
