@@ -20,3 +20,45 @@ library(tidyverse)
 library(readr)
 ```
 
+
+---
+class: left, middle
+# Defender position 
+
+
+```{r out.width = '50%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/position.png")
+```
+
+* In the sport of association football, a defender is an outfield player whose primary roles are to stop attacks during the game and prevent the opposing team from scoring goals.
+
+* Center backs are usually in pairs, with two full-backs to their left and right, but can come in threes with no full backs.
+
+---
+class: left, middle
+
+Two main important characteristics of a defender :
+.content-box-soft[
+* **Recovery**  - A recovery is recorded at the point where the player of the team beginning the possession touches the ball. 
+]
+.content-box-soft[
+* **Clearance** - When a player kicks the ball away from the goal they are defending. 
+]
+.content-box-soft[
+We will only analyze players who have played more than **50%** of the games, considering consistency is key factor for a 38 matches long league.
+]
+
+
+```{r out.width = '20%', echo = FALSE, fig.align="center"}
+knitr::include_graphics("figs/logo.png")
+```
+
+
+
+
+
+
+
+
+
+
