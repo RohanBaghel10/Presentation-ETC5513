@@ -1,8 +1,8 @@
 ---
-title: "Xaringan Template"
-subtitle: "An example"
-author: "Patricia Menéndez"
-institute: "Department of Econometrics and Business Statistics"
+title: " Best of La Liga (2019-20) "
+subtitle: "The Best Players"
+author: "Dhruv Nirmal, Sneha Kharbanda, Rohan Baghel, Xianghe Xu"
+institute: "Department of Econometrics and Business Statistics, Monash University"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -24,6 +24,33 @@ library(kableExtra)
 La_liga_data <- read.csv("data/laliga_player_stats_english.csv")
 ```
 
+class: left, top 
+
+# Introduction
+
+* La Liga is the Spanish football league and famous for it’s clubs like Real Madrid, Barcelona and Atlético Madrid. 
+
+* The football leagues provide a great database for accurate statistics. 
+
+* We are analyzing the data from the season 2019-2020.
+
+
+```{r message=FALSE, echo=FALSE, warning=FALSE, out.width = '50%', fig.align='center'}
+knitr::include_graphics("figs/LA-liga.png")
+```
+
+---
+## Research Question 
+
+* In our analysis we have found out the best players in every position ( Defender, Forward, Midfielder, Goalkeeper ). 
+.content-box-soft[
+* We have taken this data from [Kaggle](https://www.kaggle.com/datasets/thegreatcoder/laliga-player-stats).
+
+* The data set contains variables like : Goals scored, Assists, Recoveries, Clearances etc.
+
+* The data contains information about each and every player of the league. 
+]
+---
 
 class: left, middle
 # Defender position 
@@ -388,4 +415,16 @@ goal_data4 <- goal_data2 %>%
 knitr::kable(goal_data4, "pipe", align = "llccr")
 ```
 
+---
+class: left, top
+# Conclusion
 
+After analyzing the data we have found the following :
+
+* **G. Pique** from FC Barcelona is the best **defender**.
+
+* **Lionel Messi** from FC Barcelona is the best **forward**.
+
+* **D. Parejo** from Valencia CF is the best **midfielder**.
+
+* **David Soria** from Getafe CF is the best **goalkeeper**.

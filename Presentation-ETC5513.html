@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Xaringan Template</title>
+    <title>Best of La Liga (2019-20)</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Patricia Menéndez" />
+    <meta name="author" content="Dhruv Nirmal, Sneha Kharbanda, Rohan Baghel, Xianghe Xu" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <script src="libs/kePrint/kePrint.js"></script>
     <link href="libs/lightable/lightable.css" rel="stylesheet" />
@@ -13,10 +13,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Xaringan Template
-## An example
-### Patricia Menéndez
-### Department of Econometrics and Business Statistics
+.title[
+# Best of La Liga (2019-20)
+]
+.subtitle[
+## The Best Players
+]
+.author[
+### Dhruv Nirmal, Sneha Kharbanda, Rohan Baghel, Xianghe Xu
+]
+.institute[
+### Department of Econometrics and Business Statistics, Monash University
+]
 
 ---
 
@@ -28,6 +36,31 @@ class: center, middle, inverse, title-slide
 
 
 
+class: left, top 
+
+# Introduction
+
+* La Liga is the Spanish football league and famous for it’s clubs like Real Madrid, Barcelona and Atlético Madrid. 
+
+* The football leagues provide a great database for accurate statistics. 
+
+* We are analyzing the data from the season 2019-2020.
+
+
+&lt;img src="figs/LA-liga.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+## Research Question 
+
+* In our analysis we have found out the best players in every position ( Defender, Forward, Midfielder, Goalkeeper ). 
+.content-box-soft[
+* We have taken this data from [Kaggle](https://www.kaggle.com/datasets/thegreatcoder/laliga-player-stats).
+
+* The data set contains variables like : Goals scored, Assists, Recoveries, Clearances etc.
+
+* The data contains information about each and every player of the league. 
+]
+---
 
 class: left, middle
 # Defender position 
@@ -377,7 +410,19 @@ class: center, middle
 |Athletic Club      |Herrerín     |    228     |     27     |    9|
 |Valencia CF        |Neto         |    272     |     19     |   10|
 
+---
+class: left, top
+# Conclusion
 
+After analyzing the data we have found the following :
+
+* **G. Pique** from FC Barcelona is the best **defender**.
+
+* **Lionel Messi** from FC Barcelona is the best **forward**.
+
+* **D. Parejo** from Valencia CF is the best **midfielder**.
+
+* **David Soria** from Getafe CF is the best **goalkeeper**.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -421,6 +466,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
